@@ -4,6 +4,7 @@
 
 typedef enum {
     // single-character tokens
+    TOKEN_SHARP,                                // '#'
     TOKEN_LEFT_PAREN, TOKEN_RIGHT_PAREN,		// '(', ')'
     TOKEN_LEFT_BRACKET, TOKEN_RIGHT_BRACKET,	// '[', ']'
     TOKEN_LEFT_BRACE, TOKEN_RIGHT_BRACE,  		// '{', '}'
@@ -22,7 +23,7 @@ typedef enum {
     TOKEN_EQUAL, TOKEN_EQUAL_EQUAL, 	// '=', '=='
     TOKEN_BANG, TOKEN_BANG_EQUAL,	  	// '!', '!='
     TOKEN_LESS, TOKEN_LESS_EQUAL, TOKEN_LESS_LESS, 				// '<', '<=', '<<'
-    TOKEN_GREATER, TOKEN_GREATER_EQUAL, TOKEN_GREAER_GREATER, 	// '>', '>=', '>>'
+    TOKEN_GREATER, TOKEN_GREATER_EQUAL, TOKEN_GREATER_GREATER, 	// '>', '>=', '>>'
     
     // 字面值: 标识符, 字符, 字符串, 数字
     TOKEN_IDENTIFIER, TOKEN_CHARACTER, TOKEN_STRING, TOKEN_NUMBER,
